@@ -1,94 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #282c34;
-    color: white;
-}
-
-#game-container {
-    width: 400px;
-    margin: auto;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-/* General Styling */
+/* Cool Gradient Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1abc9c, #3498db);
-    color: #fff;
     text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    padding: 0;
 }
 
-/* Quiz Container */
+/* Centered Quiz Container */
 #quiz-container {
-    background: rgba(0, 0, 0, 0.8);
     width: 50%;
-    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Questions */
-.question {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Options */
-label {
-    display: block;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-label:hover {
-    background: rgba(255, 255, 255, 0.4);
-}
-
-/* Buttons */
-button {
-    background: #f39c12;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
     color: white;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Quiz Options (Buttons) */
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
     border: none;
-    padding: 12px 20px;
-    font-size: 16px;
+    background: #ff6f61;
+    color: white;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background 0.3s;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    outline: none;
 }
 
-button:hover {
-    background: #e67e22;
+/* Button Hover Effect */
+.option-btn:hover {
+    background: #d64a40;
+    transform: scale(1.05);
 }
 
-/* Result */
-#result {
-    font-size: 20px;
+/* Final Score Message */
+#quiz-container h2 {
+    font-size: 22px;
     font-weight: bold;
-    margin-top: 20px;
-    color: #2ecc71;
+    color: #ffeb3b;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #quiz-container {
+        width: 80%;
+    }
 }
